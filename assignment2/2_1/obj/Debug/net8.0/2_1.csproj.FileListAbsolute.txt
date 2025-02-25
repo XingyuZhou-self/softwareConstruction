@@ -1,0 +1,15 @@
+D:\application\vsproject\SoftwareConstruction\assignment2\2_1\bin\Debug\net8.0\2_1.exe
+D:\application\vsproject\SoftwareConstruction\assignment2\2_1\bin\Debug\net8.0\2_1.deps.json
+D:\application\vsproject\SoftwareConstruction\assignment2\2_1\bin\Debug\net8.0\2_1.runtimeconfig.json
+D:\application\vsproject\SoftwareConstruction\assignment2\2_1\bin\Debug\net8.0\2_1.dll
+D:\application\vsproject\SoftwareConstruction\assignment2\2_1\bin\Debug\net8.0\2_1.pdb
+D:\application\vsproject\SoftwareConstruction\assignment2\2_1\obj\Debug\net8.0\2_1.GeneratedMSBuildEditorConfig.editorconfig
+D:\application\vsproject\SoftwareConstruction\assignment2\2_1\obj\Debug\net8.0\2_1.AssemblyInfoInputs.cache
+D:\application\vsproject\SoftwareConstruction\assignment2\2_1\obj\Debug\net8.0\2_1.AssemblyInfo.cs
+D:\application\vsproject\SoftwareConstruction\assignment2\2_1\obj\Debug\net8.0\2_1.csproj.CoreCompileInputs.cache
+D:\application\vsproject\SoftwareConstruction\assignment2\2_1\obj\Debug\net8.0\2_1.sourcelink.json
+D:\application\vsproject\SoftwareConstruction\assignment2\2_1\obj\Debug\net8.0\2_1.dll
+D:\application\vsproject\SoftwareConstruction\assignment2\2_1\obj\Debug\net8.0\refint\2_1.dll
+D:\application\vsproject\SoftwareConstruction\assignment2\2_1\obj\Debug\net8.0\2_1.pdb
+D:\application\vsproject\SoftwareConstruction\assignment2\2_1\obj\Debug\net8.0\2_1.genruntimeconfig.cache
+D:\application\vsproject\SoftwareConstruction\assignment2\2_1\obj\Debug\net8.0\ref\2_1.dll

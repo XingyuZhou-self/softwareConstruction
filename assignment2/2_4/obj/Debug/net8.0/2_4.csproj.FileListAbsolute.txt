@@ -1,0 +1,15 @@
+D:\application\vsproject\SoftwareConstruction\assignment2\2_4\bin\Debug\net8.0\2_4.exe
+D:\application\vsproject\SoftwareConstruction\assignment2\2_4\bin\Debug\net8.0\2_4.deps.json
+D:\application\vsproject\SoftwareConstruction\assignment2\2_4\bin\Debug\net8.0\2_4.runtimeconfig.json
+D:\application\vsproject\SoftwareConstruction\assignment2\2_4\bin\Debug\net8.0\2_4.dll
+D:\application\vsproject\SoftwareConstruction\assignment2\2_4\bin\Debug\net8.0\2_4.pdb
+D:\application\vsproject\SoftwareConstruction\assignment2\2_4\obj\Debug\net8.0\2_4.GeneratedMSBuildEditorConfig.editorconfig
+D:\application\vsproject\SoftwareConstruction\assignment2\2_4\obj\Debug\net8.0\2_4.AssemblyInfoInputs.cache
+D:\application\vsproject\SoftwareConstruction\assignment2\2_4\obj\Debug\net8.0\2_4.AssemblyInfo.cs
+D:\application\vsproject\SoftwareConstruction\assignment2\2_4\obj\Debug\net8.0\2_4.csproj.CoreCompileInputs.cache
+D:\application\vsproject\SoftwareConstruction\assignment2\2_4\obj\Debug\net8.0\2_4.sourcelink.json
+D:\application\vsproject\SoftwareConstruction\assignment2\2_4\obj\Debug\net8.0\2_4.dll
+D:\application\vsproject\SoftwareConstruction\assignment2\2_4\obj\Debug\net8.0\refint\2_4.dll
+D:\application\vsproject\SoftwareConstruction\assignment2\2_4\obj\Debug\net8.0\2_4.pdb
+D:\application\vsproject\SoftwareConstruction\assignment2\2_4\obj\Debug\net8.0\2_4.genruntimeconfig.cache
+D:\application\vsproject\SoftwareConstruction\assignment2\2_4\obj\Debug\net8.0\ref\2_4.dll
