@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using Order = OrderManagement.Order; // Explicitly specify which "Order" to use
 using OrderManagement;
+using OrderManagementEF;
 
 namespace OrderManagementWinForm
 {
     public partial class Form1 : Form
     {
         private OrderService orderService = new OrderService();
+        //private OrderServiceEF orderService = new OrderServiceEF();
         private BindingSource ordersBindingSource = new BindingSource();
         private BindingSource orderDetailsBindingSource = new BindingSource();
 
