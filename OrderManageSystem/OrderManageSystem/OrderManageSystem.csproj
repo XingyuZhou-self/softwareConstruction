@@ -174,8 +174,6 @@
     </Compile>
     <Compile Include="OrderEFContext.cs" />
     <Compile Include="OrderManagement.cs" />
-    <Compile Include="OrderManagementEF.cs" />
-    <Compile Include="OrderServiceEF.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

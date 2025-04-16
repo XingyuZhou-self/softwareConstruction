@@ -177,6 +177,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
+using OrderManagementEF;
 
 namespace OrderManagement
 {
@@ -306,25 +307,13 @@ namespace OrderManagement
         }
     }
 
-    // 定义 EF 数据上下文（DbContext）
-    public class OrderContext : DbContext
-    {
-        // 构造函数中指定连接字符串的名称，与 app.config 中的连接字符串名称一致
-        public OrderContext() : base("name=OrderDBContext") { }
-
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderDetails> OrderDetails { get; set; }
-    }
-
     // 订单服务类（基于 EF 实现数据的增删改查）
     public class OrderService
     {
         // 添加订单，如果订单已存在则抛出异常
         public void AddOrder(Order order)
         {
-            using (var db = new OrderContext())
+            using (var db = new OrderDBContext())
             {
                 if (db.Orders.Any(o => o.OrderId == order.OrderId))
                 {
@@ -364,7 +353,7 @@ namespace OrderManagement
         // 删除订单，如果订单不存在则抛出异常
         public void DeleteOrder(int orderId)
         {
-            using (var db = new OrderContext())
+            using (var db = new OrderDBContext())
             {
                 var order = db.Orders.Include("Details").FirstOrDefault(o => o.OrderId == orderId);
                 if (order == null)
@@ -384,7 +373,7 @@ namespace OrderManagement
         // 修改订单：根据订单号替换为新的订单对象，如果未找到则抛出异常
         public void UpdateOrder(Order updatedOrder)
         {
-            using (var db = new OrderContext())
+            using (var db = new OrderDBContext())
             {
                 var order = db.Orders.Include("Details").FirstOrDefault(o => o.OrderId == updatedOrder.OrderId);
                 if (order == null)
@@ -431,7 +420,7 @@ namespace OrderManagement
         // 查询订单（按订单号）
         public List<Order> QueryByOrderId(int orderId)
         {
-            using (var db = new OrderContext())
+            using (var db = new OrderDBContext())
             {
                 return db.Orders
                          .Include("Customer")
@@ -445,7 +434,7 @@ namespace OrderManagement
         // 查询订单（按商品名称）
         public List<Order> QueryByProductName(string productName)
         {
-            using (var db = new OrderContext())
+            using (var db = new OrderDBContext())
             {
                 return db.Orders
                          .Include("Customer")
@@ -459,7 +448,7 @@ namespace OrderManagement
         // 查询订单（按客户名称）
         public List<Order> QueryByCustomer(string customerName)
         {
-            using (var db = new OrderContext())
+            using (var db = new OrderDBContext())
             {
                 return db.Orders
                          .Include("Customer")
@@ -473,7 +462,7 @@ namespace OrderManagement
         // 查询订单（按订单总金额，大于等于给定金额）
         public List<Order> QueryByTotalAmount(double amount)
         {
-            using (var db = new OrderContext())
+            using (var db = new OrderDBContext())
             {
                 return db.Orders
                          .Include("Customer")
@@ -487,7 +476,7 @@ namespace OrderManagement
         // 返回所有订单
         public List<Order> GetAllOrders()
         {
-            using (var db = new OrderContext())
+            using (var db = new OrderDBContext())
             {
                 return db.Orders
                          .Include("Customer")
